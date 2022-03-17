@@ -1,13 +1,15 @@
+# Destructuring
 
 ## Ejercicios del bootcamp [ADA ITW](https://adaitw.org/)
+[Repo clonado](https://github.com/malerey/ejercicios-spread-operator-y-destructuring) de @malerey 
 
-# Destructuring
-- Ejercicio 1
-    -Crear una función (arrow function) llamada mostrarInfo
-    -mostrarInfo recibe un objeto y retorna la cadena “Tu nombre completo es ” concatenado con el valor de la propiedad nombre, un espacio y el valor de la propiedad apellido
-    -Tenés que usar destructuring dentro de la función.
+### **Ejercicio 1**
 
-```
+- Crear una función (arrow function) llamada `mostrarInfo`
+- `mostrarInfo` recibe un objeto y retorna la cadena “Tu nombre completo es ” concatenado con el valor de la propiedad nombre, un espacio y el valor de la propiedad apellido
+- Tenés que usar destructuring dentro de la función.
+
+```js
 const persona = { nombre: 'Ada', apellido: 'Lovelace', edad: 35 };
 
 const mostrarInfo = obj =>; // ACA LA SOLUCION
@@ -16,11 +18,12 @@ console.log( mostrarInfo(persona) );
 // Tu nombre completo es Ada Lovelace
 ```
 
-- Ejercicio 2
-    - Utilizando destructuring, debemos extraer la propiedad nombre de cada objeto y crear un array en la variable nombres con los 3 nombres que obtuvimos de cada persona.
-:bulb: Pista: vamos a tener que crear una variable para cada nombre
+### **Ejercicio 2**
 
-```
+- Utilizando destructuring, debemos extraer la propiedad nombre de cada objeto y crear un array en la variable nombres con los 3 nombres que obtuvimos de cada persona.
+- 💡 Pista: vamos a tener que crear una variable para cada nombre
+
+```js
 const persona1 = { nombre: 'Ada', apellido: 'Lovelace', edad: 35 };
 const persona2 = { nombre: 'Grace', apellido: 'Hopper', edad: 25 };
 const persona3 = { nombre: 'Hedy', apellido: 'Lamarr', edad: 45 };
@@ -29,14 +32,14 @@ const nombres = [];
 
 console.log( nombres );
 // [ 'Ada', 'Grace', 'Hedy' ]
-
 ```
 
-- Ejercicio 3
-    - Tenemos un array datosPersonales, con el nombre, apellido, día nacimiento, mes nacimiento, año nacimiento, lugar nacimiento (respetando el orden) de una persona
-    - Utilizando destructuring, obtener los datos necesarios para completar el siguiente código.
+### **Ejercicio 3**
 
-```
+- Tenemos un array `datosPersonales`, con el nombre, apellido, día nacimiento, mes nacimiento, año nacimiento, lugar nacimiento (respetando el orden) de una persona
+- Utilizando destructuring, obtener los datos necesarios para completar el siguiente código.
+
+```js
 const datosPersonales = [ 'Ada', 'Lovelace', 10, 12, 1815, 'Londres' ];
 
 // utilizando destructuring
@@ -46,11 +49,12 @@ console.log(`${nombre} nació en ${lugar}, el ${dia}/${mes}/${anio}.`);
 // Ada nació en Londres, el 10/12/1815.
 ```
 
-- Ejercicio 4
-    - Tenemos un objeto persona, con sus datos personales
-    - Utilizando destructuring, obtener los datos necesarios para completar el siguiente código.
+### **Ejercicio 4**
 
-```
+- Tenemos un objeto persona, con sus datos personales
+- Utilizando destructuring, obtener los datos necesarios para completar el siguiente código.
+
+```js
 const persona = {
  nombre: 'Ada',
  apellido: 'Lovelace',
@@ -65,10 +69,11 @@ console.log(`${nombre} nació en ${lugar}, el ${dia}/${mes}/${anio}.`);
 // Ada nació en Londres, el 10/12/1815.
 ```
 
-- Ejercicio 5
-    - Utilizando destructuring, tenemos que extraer la información necesaria para completar el siguiente código.
+### **Ejercicio 5**
 
-```
+- Utilizando destructuring, tenemos que extraer la información necesaria para completar el siguiente código.
+
+```js
 const persona = ['Ada Lovelace', [ { edad: 30, idioma: 'inglés' } ]];
 
 // usando destructuring, obtener las variables idioma y nombrePersona
@@ -77,10 +82,11 @@ console.log(`${nombrePersona} habla en ${idioma}.`);
 // Ada Lovelace habla en inglés.
 ```
 
-- Ejercicio 6
-    - Utilizando destructuring, tenemos que extraer la información necesaria para completar el siguiente código.
+### **Ejercicio 6**
 
-```
+- Utilizando destructuring, tenemos que extraer la información necesaria para completar el siguiente código.
+
+```js
 const persona1 = {
  nombre: 'Ada Lovelace',
  techs: ['JavaScript', 'C++']
@@ -96,15 +102,14 @@ console.log(`${nombrePersona2} programa en ${techPersona2}.`);
 
 // Ada Lovelace programa en JavaScript.
 // Grace Hopper programa en JS.
-
 ```
 
+### **Ejercicio 7**
 
-- Ejercicio 7
-    - ¿Cómo podríamos mejorar la siguiente función utilizando destructuring?
-    - La función de la solución tiene que ser también una arrow function de una sola línea
+- ¿Cómo podríamos mejorar la siguiente función utilizando destructuring?
+- La función de la solución tiene que ser también una arrow function de una sola línea
 
-```
+```js
 const calcularArea = (triangulo) => {
  const ladoA = triangulo.a;
  const ladoB = triangulo.b;
@@ -121,11 +126,12 @@ console.log( calcularArea(triangulo1) ); // 15
 console.log( calcularArea(triangulo2) ); // 13
 ```
 
-- Ejercicio 8
-    - Crear una función (arrow function) llamada mostrarPrimerDisco que recibe un objeto y retorna la cadena "El primer disco de BANDA es PRIMERDISCO"
-    - Tenés que usar destructuring dentro de la función, y tiene que tener el return implícito
+### **Ejercicio 8**
 
-```
+- Crear una función (arrow function) llamada `mostrarPrimerDisco` que recibe un objeto y retorna la cadena "El primer disco de BANDA es PRIMERDISCO"
+- Tenés que usar destructuring dentro de la función, y tiene que tener el return implícito
+
+```js
 const banda = {
  nombre: 'Nirvana',
  discos: [
@@ -138,14 +144,14 @@ const banda = {
 // crear la funcion mostrarPrimerDisco
 
 console.log( mostrarPrimerDisco(banda) ); // El primer disco de Nirvana es Bleach
-
 ```
 
-- Ejercicio 9
-    - Crear una una arrow function llamada estaVacio que recibe un array y retornar true si no tiene ningún elemento, o false si tiene algún elemento
-    - Es necesario utilizar destructuring y no hacer uso de la propiedad length de los arrays.
+### **Ejercicio 9**
 
-```
+- Crear una una arrow function llamada `estaVacio` que recibe un array y retornar true si no tiene ningún elemento, o false si tiene algún elemento
+- Es necesario utilizar destructuring y no hacer uso de la propiedad length de los arrays.
+
+```js
 const estaVacio = ; // aca la solucion
 
 estaVacio([])
@@ -158,7 +164,7 @@ estaVacio([[]])
  //=> false
 ```
 
-:bulb: Pista: cuando intento hacer destructuring sobre elementos que no existen, obtengo undefined
+- 💡 Pista: cuando intento hacer destructuring sobre elementos que no existen, obtengo undefined
 
 
 
