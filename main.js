@@ -165,35 +165,36 @@ const banda = {
 };
 
 // crear la funcion mostrarPrimerDisco
-const mostrarPrimerDisco = (objeto) => {
+const mostrarPrimerDisco = objeto => {
+  const {nombre, discos} = objeto;
+  const [primerDisco] = discos
 
-}
+  return `El primer disco de ${nombre} es ${primerDisco.nombre}`
+} 
 
-// console.log( mostrarPrimerDisco(banda) ); // El primer disco de Nirvana es Bleach
-
-// const promedio = (array) => {
-//     const paso1 = array.reduce((acc,element)=> {
-//       return (acc + element)
-//     },0)
-//     return paso1/array.length
-//   }
-
-//   console.log( promedio([4, 7, 8, 5, 10]))
+console.log(mostrarPrimerDisco(banda))
 
 
-  const sumaDeLosDoblesPositivos = (array) => {
-    const arraySinNegativos = array.filter(element=> {
-      return element > 0
-    })
-    console.log(arraySinNegativos)
-    const doblesPositivos = arraySinNegativos.map((numero)=> {
-      numero*2
-    })
-    console.log(doblesPositivos)
-    return doblesPositivos.reduce((acc,element)=> {
-      return acc + element
-    },0)
-  } 
-  
-  
-  console.log(sumaDeLosDoblesPositivos([2, -4, 6, 0, 5, -1]))
+//Ejercicoi 9
+// Crear una una arrow function llamada estaVacio que recibe un array y retornar true si no tiene ningún elemento, o false si tiene algún elemento
+// Es necesario utilizar destructuring y no hacer uso de la propiedad length de los arrays.
+// const estaVacio = ; // aca la solucion
+
+// estaVacio([])
+//  //=> true
+
+// estaVacio([0])
+//  //=> false
+
+// estaVacio([[]])
+//  //=> false
+
+
+
+
+
+
+
+
+//preguntas Male
+// ejercicio 8. No entiendo que la funcion tiene que tener un retorno implicito. Como haria para hacer destructuring y que ademas retorne un string?
