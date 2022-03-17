@@ -94,7 +94,7 @@ const persona1 = {
 
 const persona2 = {
  nombre: 'Grace Hopper',
- techs: []
+ techs: ['JS']
 };
 
 console.log(`${nombrePersona1} programa en ${techPersona1}.`);
@@ -148,7 +148,7 @@ console.log( mostrarPrimerDisco(banda) ); // El primer disco de Nirvana es Bleac
 
 ### **Ejercicio 9**
 
-- Crear una una arrow function llamada `estaVacio` que recibe un array y retornar true si no tiene ningún elemento, o false si tiene algún elemento
+- Crear una arrow function llamada `estaVacio` que recibe un array y retornar true si no tiene ningún elemento, o false si tiene algún elemento
 - Es necesario utilizar destructuring y no hacer uso de la propiedad length de los arrays.
 
 ```js

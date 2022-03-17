@@ -180,17 +180,17 @@ console.log(mostrarPrimerDisco(banda))
 // Es necesario utilizar destructuring y no hacer uso de la propiedad length de los arrays.
 // const estaVacio = ; // aca la solucion
 
-// estaVacio([])
-//  //=> true
 
-// estaVacio([0])
-//  //=> false
+const estaVacio = (array) => {
+  const [buenPerro] = array
+  return buenPerro === undefined
+  
+}
 
-// estaVacio([[]])
-//  //=> false
-
-
-
+console.log(estaVacio([]))
+console.log(estaVacio([0]))
+console.log(estaVacio([[]]))
+ 
 
 
 
